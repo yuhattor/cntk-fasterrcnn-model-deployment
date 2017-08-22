@@ -14,6 +14,7 @@ sys.path.append(os.path.join(abs_path, ".."))
 from utils.rpn.rpn_helpers import create_rpn, create_proposal_target_layer
 from utils.rpn.cntk_smoothL1_loss import SmoothL1Loss
 from utils.map.map_helpers import evaluate_detections
+from utils.annotations.annotations_helper import parse_class_map_file
 from config import cfg
 from od_mb_source import ObjectDetectionMinibatchSource
 from cntk_helpers import regress_rois
@@ -42,7 +43,8 @@ map_file_path = os.path.join(abs_path, cfg["CNTK"].MAP_FILE_PATH)
 data_path = map_file_path
 
 globalvars = {}
-globalvars['classes'] = ["background","target1","target2","target3","target4","target5","target6","target7","target8","target9","target0"]
+globalvars['class_map_file'] = os.path.join(data_path, cfg["CNTK"].CLASS_MAP_FILE)
+globalvars['classes'] = parse_class_map_file(globalvars['class_map_file'])
 globalvars['num_classes'] = len(globalvars['classes'])
 
 LabelList =  globalvars['classes'] 
