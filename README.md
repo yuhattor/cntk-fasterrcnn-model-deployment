@@ -12,9 +12,8 @@ Yuki
 Minimum CNTK version required is 2.1
 If you still use version 2.0 or below, please check these sites.
 
-. For Windows user : https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-Windows-Python
-
-. For Linux user : https://docs.microsoft.com/en-us/cognitive-toolkit/setup-linux-python
+- For Windows user : https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-Windows-Python
+- For Linux user : https://docs.microsoft.com/en-us/cognitive-toolkit/setup-linux-python
 
 For instance, the upgrade script is like below. (this is for Linux user with python 3.5)
 
@@ -35,5 +34,5 @@ python application.py
 `
 
 But before you run this program, please check below.
-. Your model file is correctly placed at `/Deploy-CNTK-FasterRCNN/web_deploy/faster.model`
-. your labels are defined at `Deploy-CNTK-FasterRCNN/web_deploy/class_map.txt`
+- Your model file is correctly placed at `/Deploy-CNTK-FasterRCNN/web_deploy/faster.model`
+- your labels are defined at `Deploy-CNTK-FasterRCNN/web_deploy/class_map.txt`
