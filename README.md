@@ -10,7 +10,8 @@ Yuki
 
 # Requirement
 Minimum CNTK version required is 2.1
-If you still use version 2.0 or below, please check these sites.
+
+If you still use version 2.0 or older, please check these sites.
 
 - For Windows user : https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-Windows-Python
 - For Linux user : https://docs.microsoft.com/en-us/cognitive-toolkit/setup-linux-python
